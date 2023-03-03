@@ -1,0 +1,44 @@
+.pop-text {
+  font-weight: 700;
+}
+
+main {
+  padding: 40px 60px;
+}
+
+address {
+  margin: 28px 0;
+}
+
+form {
+  background-color: #d28ed6;
+  padding: 24px;
+  border: 1px solid;
+  width: 520px;
+}
+
+form div {
+  margin: 14px 0;
+}
+
+form label {
+  display: block;
+}
+
+form > fieldset {
+  border-color: #a167a5;
+  padding: 22px;
+}
+
+form > fieldset > legend {
+  font-size: 28px;
+}
+
+input,
+select {
+  width: 50%;
+}
+
+form button {
+  padding: 8px 14px;
+}

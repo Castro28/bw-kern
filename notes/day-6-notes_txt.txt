@@ -1,0 +1,110 @@
+**** Shorthand formulas for margin and padding ****
+
+**Note: I'll be using padding in most of these examples but it works with margin too **
+
+*[1] 2 values combo: for common values of top and bottom, and left and right.
+
+ex - padding: value1 value2;
+_ _ _ _ _ _ _ _ _ _ _ _ _
+|Key                    |
+|   value1: top, bottom |
+|   value2: left, right |
+- - - - - - - - - - - - -
+
+
+before:
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+after:
+    padding: 36px 25px;
+
+*[2] 4 values combo: add all four sides of the box model
+
+ex - margin: value1 value2 value3 value4;
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+|Key                                 |
+|   value1: top,                     |
+|   value2: right                    |
+|   value3: bottom                   |
+|   value4: left                     |
+- - - - - - - - - - - - - - - - - - -
+
+before:
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: 25px;
+    margin-right: 25px;
+after:
+    margin: 36px 25px 36px 25px;
+
+
+*[3] 1 value combo: all four sides of the box model SHARE the SAME length
+
+ex - margin: value1;
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+|Key                                 |
+|   value1: top, right, bottom, left |
+- - - - - - - - - - - - - - - - - - -
+
+before:
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    
+after:
+    margin: 30px;
+********************* */
+
+*** Border Shorthand formula ***
+*[3] 1 value combo: add line-width, line-style, and line-color (optional)
+
+    ex - border: value1;
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+    |Key                                 |
+    |   value1: line-width line-style line-color        |
+    - - - - - - - - - - - - - - - - - - -
+    
+    before:
+        border-width: 4px;
+        border-style: solid;
+        border-color: red;
+        
+    after:
+        border: 4px solid red;
+
+*Note: You can skip the "color" part and it wil automatically inherit the initial color for that element. In this case, it would like this:
+    border: 4px solid;
+
+
+
+CSS Specificity
+
+- If you're trying to select an element that is within a parent/grandparent/great great grandparent/etc. Start with selecting parent, following a space, and then the element you're specifically selecting
+    Key:
+        selector selector {} 
+
+    Here's an example using elements:
+        header h1 {}
+
+- If you're trying to select an element who is a specific sibling of an element, begin by selecting the element whose sibling you're targeting, and then the element you're specifically selecting
+    Key:
+        selector + selector {}
+
+    Here's an example using elements:
+        h1 + section {}
+
+- If you're trying to select the elements direct child/children within it's nest
+    Key:
+        selector > selector {}
+    Here's an example using elements:
+        section > h2 {}
+
+- If you're trying to apply multiple selectors to a single ruleset
+    Key:
+        selector, selector, ... {}
+    Here's an example using elements:
+        header, main, div {}

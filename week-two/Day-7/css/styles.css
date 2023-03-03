@@ -1,0 +1,31 @@
+body {
+    background-color: lightskyblue;
+    
+}
+header {
+    background-color: lightblue;
+    /* width: 800px;
+    margin: 0 auto;
+    padding: 92px; */
+    padding: 92px;
+}
+main {
+    
+    /* width: 800px;
+    margin: 0 auto;
+    padding: 92px; */
+    padding: 22px 32px;
+}
+
+#special-wrapper{
+    background-color: blueviolet;
+}
+.wrapper {
+    background-color: grey;
+    width: 800px;
+    margin: 0 auto;
+    
+    padding: 32px;
+
+    /* height: 1000px; */
+}

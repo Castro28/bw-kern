@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(255, 197, 206) ;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.center {
+    width: 400px;
+    border: 10px solid blueviolet ;
+    display: block;
+    margin: 40px auto;
+    padding: auto;
+}
+
+.title {
+    text-align: center;
+}
+h1{
+    width: auto;
+    text-align: left;
+    color: rgb(91, 151, 175);
+}
+
+
+
+span {
+color: blueviolet;    
+}
+
+section {
+    border-radius: 12px;
+    background-color: white;
+    max-width: fit-content;
+    /* inline-size: auto; */
+    overflow-wrap: break-word;
+    padding:22px 70px;
+    margin: 10px 98px;
+}
+ ul ol {
+    /* text-align: center; */
+    padding: 2px 14px;
+ }
+ 
+ .section-2 {
+    inline-size: auto;
+ }
+
